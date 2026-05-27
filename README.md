@@ -2,6 +2,8 @@
 
 Aplikasi manajemen tugas lengkap dengan fitur real-time notifications, background jobs, dan WebSocket support. Built with Laravel 11 + React + TypeScript.
 
+[![Watch the video](https://youtube.com)](https://www.youtube.com/watch?v=Prxsve7vSNw)
+
 ## 🚀 Fitur Utama
 
 - **Task Management**: CRUD tugas dengan attachment dan komentar
