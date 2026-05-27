@@ -90,44 +90,6 @@ make dev-shell-db        # PostgreSQL CLI
 make dev-migrate      # Run migrations
 make dev-seed         # Run seeders
 
-
-## 🔌 API Endpoints
-
-### Authentication
-```
-POST   /api/auth/login          # Login
-POST   /api/auth/register       # Register
-POST   /api/auth/logout         # Logout (auth required)
-GET    /api/auth/me             # Get current user
-```
-
-### Tasks
-```
-GET    /api/tasks               # List tasks (with filters)
-POST   /api/tasks               # Create task
-GET    /api/tasks/{id}          # Get task detail
-PUT    /api/tasks/{id}          # Update task
-DELETE /api/tasks/{id}          # Delete task
-POST   /api/tasks/{id}/comments # Add comment
-POST   /api/tasks/{id}/attachments # Upload attachment
-```
-
-### Jobs (Background Processing)
-```
-POST   /api/jobs/export         # Export tasks to CSV
-POST   /api/jobs/bulk-update    # Bulk update task status
-GET    /api/jobs/{id}           # Check job status
-GET    /api/jobs               # List user jobs
-```
-
-### Notifications
-```
-GET    /api/notifications       # Get notifications
-GET    /api/notifications/unread-count  # Count unread
-POST   /api/notifications/{id}/read     # Mark as read
-POST   /api/notifications/mark-all-read # Mark all read
-```
-
 Full API documentation: lihat `docs/API.md`
 
 ## 🗄️ Database Schema
